@@ -1,0 +1,35 @@
+{
+  "name": "start",
+  "version": "1.0.0",
+  "dependencies": {
+    "@babel/preset-env": "^7.12.11",
+    "babel": "^6.23.0",
+    "babel-jest": "^26.6.3"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "type": "module",
+  "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.mjs$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "src/node_modules/(?!@sapper)"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "mjs"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src/node_modules"
+    ]
+  }
+}
