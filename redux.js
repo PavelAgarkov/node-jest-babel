@@ -11,9 +11,17 @@ function counterReducer(state = {value: 0}, action) {
     }
 }
 
-let store = createStore(counterReducer);
-store.subscribe(() => console.log(store.getState()));
+export function getStore() {
+    let store = createStore(counterReducer);
+    store.subscribe(() => console.log(store.getState()));
 
-store.dispatch({type: 'counter/incremented'});
-store.dispatch({type: 'counter/incremented'});
-store.dispatch({type: 'counter/decremented'});
+    return store;
+}
+
+export function execAction(store, action) {
+    store.dispatch({type: action});
+}
+
+
+
+
