@@ -1,6 +1,11 @@
 import fetch from "node-fetch";
 
-fetch('https://www.google.ru/')
-    .then((r) => {
-        console.log(r.status);
-    });
+let a = fetch('http://localhost:3000')
+    .then((response) => {
+        return response.json();
+    }).
+then((data) => {
+    console.log(data);
+});
+
+console.log(a)
