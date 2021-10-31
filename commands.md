@@ -1,1 +1,1 @@
-npx jest - запуск тестов(jest)
+`npx jest` - запуск тестов(jest)
