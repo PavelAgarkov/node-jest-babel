@@ -8,8 +8,10 @@ let
     urlencodedParser = bodyParser.urlencoded({ extended: false })
 ;
 
-app.use(jsonParser);
-app.use(urlencodedParser);
+app.use(
+    jsonParser,
+    urlencodedParser
+);
 
 app.get('/', (req, res) => {
     res.header({'Access-Control-Allow-Origin': '*'});
