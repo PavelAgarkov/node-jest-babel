@@ -1,4 +1,4 @@
-import {execAction, getStore} from "../../redux";
+import {execAction, getStore} from "../../files/redux";
 
 test('redux store', () => {
     let store = getStore();
