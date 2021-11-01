@@ -1,4 +1,7 @@
-`npx jest` - запуск тестов(jest)
+`npm install -g nodemon` - релоадер
+`npm i -D typescript` - ts
 
-`npm install -g nodemon`
+`npx jest` - запуск тестов(jest)
 `nodemon server.js` - запуск в лайв режиме node.js
+`tsc ts/*.ts --outDir build` - скомпилировать ts в указанную директорию
+ 
