@@ -3,9 +3,9 @@
     "module": "commonjs",
     "outDir": "build",
     "rootDirs": ["ts"],
-    "noEmit": true,
     "target": "es6",
-    "sourceMap": true
+    "sourceMap": true,
+    "debug": true
   },
   "exclude": [
     "node_modules"

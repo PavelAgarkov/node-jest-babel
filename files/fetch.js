@@ -22,5 +22,5 @@ fetch('http://localhost:3000/app-post', {
     .then((response) => {
         return response.json();
     }).then((data) => {
-        console.log(data);
-    });
+    console.log(data);
+});
